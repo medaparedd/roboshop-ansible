@@ -25,10 +25,10 @@
      replace: '0.0.0.0'
 
      
-- name: enable and start mongodb
-  ansible.builtin.service:
-    name: mongod
-    state: restarted
+  - name: enable and start mongodb
+    ansible.builtin.service:
+     name: mongod
+     state: restarted
 
 
   
